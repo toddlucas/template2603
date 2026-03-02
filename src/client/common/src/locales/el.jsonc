@@ -1,0 +1,21 @@
+{
+    "Menu": "Μενού",
+
+    // Buttons
+    "Close": "Κλείσιμο",
+    
+    //
+    // Compontents
+    //
+
+    // Table footer
+    "Show": "Εμφάνιση",
+    "per page": "ανά σελίδα",
+
+    // Language names (in Greek)
+    "language.en": "Αγγλικά",
+    "language.el": "Ελληνικά",
+    "language.es": "Ισπανικά",
+    "language.fr": "Γαλλικά",
+    "language.de": "Γερμανικά"
+}

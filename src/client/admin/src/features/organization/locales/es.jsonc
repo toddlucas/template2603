@@ -1,0 +1,10 @@
+{
+    // Organizations list page header
+    "Manage organizations and their hierarchy": "Gestionar organizaciones y su jerarquía",
+
+    // Organizations table header
+    "Organization Name": "Nombre de la Organización",
+    "Code": "Código",
+    "Status": "Estado",
+    "Parent Organization": "Organización Principal"
+}

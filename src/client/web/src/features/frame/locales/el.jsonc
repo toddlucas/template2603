@@ -1,0 +1,36 @@
+{
+    // REVIEW: AI_TRANSLATED - Verify translations with native speaker
+
+    // Sidebar 
+    "App": "App",
+    "Workspaces": "Χώροι Εργασίας",
+
+    // Sidebar NavMain - Main items
+    "Contacts": "Επαφές",
+    "Inbox": "Εισερχόμενα",
+    "Sequences": "Σειρές",
+    "Analytics": "Αναλυτικά",
+    
+    // Contacts submenu
+    "All Contacts": "Όλες οι Επαφές",
+    "Import Contacts": "Εισαγωγή Επαφών",
+    "Tags": "Ετικέτες",
+    
+    // Inbox submenu
+    "All Replies": "Όλες οι Απαντήσεις",
+    "Interested": "Ενδιαφέρεται",
+    "Needs Action": "Απαιτείται Ενέργεια",
+    "Archived": "Αρχειοθετημένα",
+    
+    // Sequences submenu
+    "All Sequences": "Όλες οι Σειρές",
+    "Email Queue": "Ουρά Email",
+    "Templates": "Πρότυπα",
+    
+    // Analytics submenu
+    "Dashboard": "Πίνακας Ελέγχου",
+
+    // Sidebar NavUser
+    "User": "Χρήστης",
+    "Log out": "Αποσύνδεση"
+}

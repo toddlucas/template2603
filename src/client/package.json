@@ -1,0 +1,9 @@
+{
+  "name": "product-name",
+  "description": "Product Name",
+  "license": "UNLICENSED",
+  "author": "Base 2 Team",
+  "homepage": "https://product.tld",
+  "repository": "https://github.com/base2llc/productrepo",
+  "workspaces": ["admin", "common", "web"]
+}

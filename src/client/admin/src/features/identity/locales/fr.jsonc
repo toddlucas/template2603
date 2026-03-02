@@ -1,0 +1,13 @@
+{
+    // Users list page header
+    "Manage user accounts and permissions": "Gérer les comptes utilisateurs et les permissions",
+    "Search by user name": "Rechercher par nom d'utilisateur",
+    "Error loading users": "Erreur lors du chargement des utilisateurs",
+    "No users found": "Aucun utilisateur trouvé",
+    "Get started by creating a new user account.": "Commencez par créer un nouveau compte utilisateur.",
+
+    // Users table header
+    "ID": "ID",
+    "Email": "E-mail",
+    "User Name": "Nom d'utilisateur"
+}

@@ -1,0 +1,13 @@
+{
+    // Users list page header
+    "Manage user accounts and permissions": "Διαχείριση λογαριασμών χρηστών και προνομιών",
+    "Search by user name": "Αναζήτηση με όνομα χρήστη",
+    "Error loading users": "Σφάλμα φόρτωσης χρηστών",
+    "No users found": "Χρήστες δεν βρέθηκαν",
+    "Get started by creating a new user account.": "Ξεκινήστε δημιουργώντας ένα νέο λογαριασμό χρήστη.",
+
+    // Users table header
+    "ID": "ID",
+    "Email": "Ηλεκτρονική διεύθυνση",
+    "User Name": "Όνομα χρήστη"
+}

@@ -1,0 +1,21 @@
+{
+    "Menu": "Menu",
+
+    // Buttons
+    "Close": "Fermer",
+    
+    //
+    // Compontents
+    //
+
+    // Table footer
+    "Show": "Afficher",
+    "per page": "par page",
+
+    // Language names (in French)
+    "language.en": "Anglais",
+    "language.el": "Grec",
+    "language.es": "Espagnol",
+    "language.fr": "Français",
+    "language.de": "Allemand"
+}

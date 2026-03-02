@@ -1,0 +1,24 @@
+{
+  // Mail Infrastructure App
+  "Mail Infrastructure": "Mail Infrastructure",
+  "Overview": "Overview",
+  "Domains": "Domains",
+  "Warmup": "Warmup",
+  "DNS Records": "DNS Records",
+  
+  // Domain management
+  "Mail Domains": "Mail Domains",
+  "Manage your sending domains and their authentication settings": "Manage your sending domains and their authentication settings",
+  
+  // Warmup
+  "Email Warmup": "Email Warmup",
+  "Monitor and manage your domain warmup progress": "Monitor and manage your domain warmup progress",
+  
+  // Overview
+  "Active Domains": "Active Domains",
+  "Warmup Status": "Warmup Status",
+  "DNS Health": "DNS Health",
+  "Send Rate": "Send Rate",
+  "Getting Started": "Getting Started",
+  "Set up your mail infrastructure in a few steps": "Set up your mail infrastructure in a few steps"
+}

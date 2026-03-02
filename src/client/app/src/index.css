@@ -1,0 +1,4 @@
+@import "tailwindcss";
+@source "../../common/src";
+/* @import "../../common/src/styles/index.css"; */
+@import "../../common/src/index.css"; /* shadcn/ui */

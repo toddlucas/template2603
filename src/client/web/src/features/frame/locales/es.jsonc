@@ -1,0 +1,36 @@
+{
+    // REVIEW: AI_TRANSLATED - Verify translations with native speaker
+
+    // Sidebar 
+    "App": "App",
+    "Workspaces": "Espacios de trabajo",
+
+    // Sidebar NavMain - Main items
+    "Contacts": "Contactos",
+    "Inbox": "Bandeja de entrada",
+    "Sequences": "Secuencias",
+    "Analytics": "Analíticas",
+    
+    // Contacts submenu
+    "All Contacts": "Todos los Contactos",
+    "Import Contacts": "Importar Contactos",
+    "Tags": "Etiquetas",
+    
+    // Inbox submenu
+    "All Replies": "Todas las Respuestas",
+    "Interested": "Interesado",
+    "Needs Action": "Requiere Acción",
+    "Archived": "Archivado",
+    
+    // Sequences submenu
+    "All Sequences": "Todas las Secuencias",
+    "Email Queue": "Cola de Correos",
+    "Templates": "Plantillas",
+    
+    // Analytics submenu
+    "Dashboard": "Panel",
+
+    // Sidebar NavUser
+    "User": "Usuario",
+    "Log out": "Cerrar sesión"
+}

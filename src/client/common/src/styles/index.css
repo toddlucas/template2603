@@ -1,0 +1,11 @@
+/* Shared styles */
+/* NOTE: THIS FILE IS INACTIVE; USING SHADCN/UI INSTEAD */
+@custom-variant dark (&:where(.dark, .dark *));
+@import "./brand/theme.css";
+@import "./brand/components.css";
+@import "./brand/utilities.css";
+
+:root {
+  background-color: var(--color-ambient);
+  color: var(--color-on-ambient);
+}

@@ -1,0 +1,230 @@
+/* https://coolors.co/palette/353535-3c6e71-ffffff-d9d9d9-284b63 */
+
+/*
+{ 'jet': { DEFAULT: '#353535', 100: '#0b0b0b', 200: '#151515', 300: '#202020', 400: '#2b2b2b', 500: '#353535', 600: '#5e5e5e', 700: '#868686', 800: '#aeaeae', 900: '#d7d7d7' }, 'caribbean_current': { DEFAULT: '#3c6e71', 100: '#0c1617', 200: '#182c2d', 300: '#244344', 400: '#30595b', 500: '#3c6e71', 600: '#539a9e', 700: '#7bb6b9', 800: '#a7ced1', 900: '#d3e7e8' }, 'white': { DEFAULT: '#ffffff', 100: '#333333', 200: '#666666', 300: '#999999', 400: '#cccccc', 500: '#ffffff', 600: '#ffffff', 700: '#ffffff', 800: '#ffffff', 900: '#ffffff' }, 'platinum': { DEFAULT: '#d9d9d9', 100: '#2b2b2b', 200: '#575757', 300: '#828282', 400: '#adadad', 500: '#d9d9d9', 600: '#e0e0e0', 700: '#e8e8e8', 800: '#f0f0f0', 900: '#f7f7f7' }, 'indigo_dye': { DEFAULT: '#284b63', 100: '#080f14', 200: '#101e27', 300: '#182d3b', 400: '#203c4e', 500: '#284b63', 600: '#3e7397', 700: '#6099be', 800: '#95bbd4', 900: '#cadde9' } }
+--jet: #353535ff;
+--caribbean-current: #3c6e71ff;
+--white: #ffffffff;
+--platinum: #d9d9d9ff;
+--indigo-dye: #284b63ff;
+*/
+
+/*https://coolors.co/palette/a8d5e2-f9a620-ffd449-548c2f-104911*/
+/*
+{ 'light_blue': { DEFAULT: '#a8d5e2', 100: '#14323b', 200: '#276576', 300: '#3b97b1', 400: '#6cb9ce', 500: '#a8d5e2', 600: '#b9dde8', 700: '#cae6ed', 800: '#dceef3', 900: '#edf7f9' }, 'orange_(web)': { DEFAULT: '#f9a620', 100: '#372201', 200: '#6d4503', 300: '#a46704', 400: '#db8906', 500: '#f9a620', 600: '#fab84c', 700: '#fcc979', 800: '#fddba5', 900: '#feedd2' }, 'mustard': { DEFAULT: '#ffd449', 100: '#413200', 200: '#836400', 300: '#c49600', 400: '#ffc506', 500: '#ffd449', 600: '#ffdd6c', 700: '#ffe591', 800: '#ffeeb6', 900: '#fff6da' }, 'forest_green': { DEFAULT: '#548c2f', 100: '#111c09', 200: '#223913', 300: '#33551c', 400: '#447126', 500: '#548c2f', 600: '#72be3f', 700: '#95cf6e', 800: '#b8df9f', 900: '#dcefcf' }, 'pakistan_green': { DEFAULT: '#104911', 100: '#030e03', 200: '#061c07', 300: '#092b0a', 400: '#0c390d', 500: '#104911', 600: '#1f8d21', 700: '#2fd131', 800: '#74e176', 900: '#baf0ba' } }
+--light-blue: #a8d5e2ff;
+--orange-web: #f9a620ff;
+--mustard: #ffd449ff;
+--forest-green: #548c2fff;
+--pakistan-green: #104911ff;
+*/
+
+/* Layer 1: Theme Colors (for Tailwind utilities) */
+@theme static {
+  /*
+  Default text and ambient background are set at the root level.
+  These are aliases that can be used to explicitly match those colors.
+  */
+  --color-ambient: #fff; /* Same as ::root background-color */
+  --color-on-ambient: #000; /* Same as ::root color */
+  --color-default: #000; /* default == on-ambient (text-default bg-ambient) */
+  --color-muted: #888;
+
+  /* Core color roles (theme anchors) */
+  --color-primary: #284b63ff; /* indigo-dye */ /* was jet */
+  --color-secondary: #3c6e71ff; /* caribbean-current */
+  --color-accent: #708A58;
+  --color-neutral: #d9d9d9ff; /* platinum */
+
+  --color-on-primary: #fff;
+  --color-on-secondary: #fff;
+  --color-on-neutral: #000;
+  --color-on-accent: #fff;
+
+  /* Semantic color roles: State-Based Colors (System Feedback)*/
+  --color-success: #548c2fff; /* forest-green */
+  --color-warning: #ffd449ff; /* mustard */
+  --color-error: #f9a620ff; /* orange-web */
+  --color-info: #a8d5e2ff; /* light-blue */
+
+  --color-on-success: #fff;
+  --color-on-warning: #000;
+  --color-on-error: #000;
+  --color-on-info: #000;
+
+  /* Interactive States - Primary */
+  --color-primary-hover: #3e7397ff;
+  --color-primary-active: #203c4eff;
+  --color-primary-pressed: #182d3bff;
+  --color-primary-focus: #6099beff;
+
+  /* Interactive States - Secondary */
+  --color-secondary-hover: #539a9eff;
+  --color-secondary-active: #30595bff;
+  --color-secondary-pressed: #244344ff;
+  --color-secondary-focus: #7bb6b9ff;
+
+  /* Interactive States - Semantic Colors */
+  --color-success-hover: #72be3fff;
+  --color-success-active: #447126ff;
+  --color-success-pressed: #33551cff;
+  --color-success-focus: #95cf6eff;
+
+  --color-error-hover: #fab84cff;
+  --color-error-active: #db8906ff;
+  --color-error-pressed: #a46704ff;
+  --color-error-focus: #fcc979ff;
+
+  --color-warning-hover: #ffdd6cff;
+  --color-warning-active: #ffc506ff;
+  --color-warning-pressed: #c49600ff;
+  --color-warning-focus: #ffe591ff;
+
+  --color-info-hover: #b9dde8ff;
+  --color-info-active: #6cb9ceff;
+  --color-info-pressed: #3b97b1ff;
+  --color-info-focus: #cae6edff;
+
+  /* Disabled States */
+  --color-disabled: #ccccccff;
+  --color-on-disabled: #666666ff;
+
+  /* Interactive Feedback */
+  --color-drag: #3b82f6ff;
+  --color-on-drag: #ffffff;
+  --color-selected: #3b82f6ff;
+  --color-on-selected: #ffffff;
+}
+
+/* Layer 2: Structural Colors (for CSS classes) */
+:root {
+  /* Surface Hierarchy */
+  --color-surface: #fff;
+  --color-panel: #f8f9fa;        /* Panel backgrounds */
+  --color-header: #f1f3f4;       /* Header/toolbar backgrounds */
+  --color-card: #ffffff;          /* Card/module backgrounds */
+
+  --color-on-surface: #000;
+  --color-on-panel: #000;
+  --color-on-header: #000;
+  --color-on-card: #000;
+
+  /* Interactive States - Surface */
+  --color-surface-hover: #f3f4f6ff;
+  --color-surface-active: #e5e7ebff;
+  --color-panel-hover: #e9ecefff;
+  --color-panel-active: #dee2e6ff;
+  --color-header-hover: #e5e7ebff;
+  --color-header-active: #d1d5dbff;
+  --color-card-hover: #f9fafbff;
+  --color-card-active: #f3f4f6ff;
+}
+
+/* Layer 2: Structural Colors (for CSS classes) for REVIEW */
+:root {
+  /* Border Hierarchy */
+  --color-border: #e0e0e0;       /* Standard borders */
+  --color-border-light: #f0f0f0; /* Light borders */
+  --color-border-emphasis: #007acc; /* Focus/active borders */
+
+  /* Text Hierarchy */
+/*
+  --color-text-primary: #333;     /* Primary text * /
+  --color-text-secondary: #666;   /* Secondary text * /
+  --color-text-tertiary: #999;    /* Tertiary text * /
+  --color-text-muted: #6b7280;   /* Muted text * /
+*/
+}
+
+/* Dark theme overrides */
+/* NOTE: These aren't applied using dark:bg-primary, etc.
+    Instead, they use the dark class applied to the root element. */
+/* Layer 1 overrides */
+.dark {
+  --color-ambient: #2f3e46;
+  --color-on-ambient: #fff;
+  --color-default: #fff; /* default == on-ambient (text-default bg-ambient) */
+  --color-muted: #888;
+
+  /* Interactive States - Primary (Dark) */
+  --color-primary-hover: #6099beff;
+  --color-primary-active: #3e7397ff;
+  --color-primary-pressed: #284b63ff;
+  --color-primary-focus: #95bbd4ff;
+
+  /* Interactive States - Secondary (Dark) */
+  --color-secondary-hover: #7bb6b9ff;
+  --color-secondary-active: #539a9eff;
+  --color-secondary-pressed: #3c6e71ff;
+  --color-secondary-focus: #a7ced1ff;
+
+  /* Interactive States - Semantic Colors (Dark) */
+  --color-success-hover: #95cf6eff;
+  --color-success-active: #72be3fff;
+  --color-success-pressed: #548c2fff;
+  --color-success-focus: #b8df9fff;
+
+  --color-error-hover: #fcc979ff;
+  --color-error-active: #fab84cff;
+  --color-error-pressed: #f9a620ff;
+  --color-error-focus: #fddba5ff;
+
+  --color-warning-hover: #ffe591ff;
+  --color-warning-active: #ffdd6cff;
+  --color-warning-pressed: #ffd449ff;
+  --color-warning-focus: #ffeeb6ff;
+
+  --color-info-hover: #cae6edff;
+  --color-info-active: #b9dde8ff;
+  --color-info-pressed: #a8d5e2ff;
+  --color-info-focus: #dceef3ff;
+
+  /* Disabled States (Dark) */
+  --color-disabled: #4b5563ff;
+  --color-on-disabled: #9ca3afff;
+
+  /* Interactive Feedback (Dark) */
+  --color-drag: #1e40afff;
+  --color-on-drag: #ffffff;
+  --color-selected: #1e40afff;
+  --color-on-selected: #ffffff;
+}
+
+/* Layer 2: Structural Colors (for CSS classes) */
+.dark {
+  --color-surface: #2f3e46;
+  --color-panel: #374151;
+  --color-header: #4b5563;
+  --color-card: #1f2937;
+
+  --color-on-surface: #fff;
+  --color-on-panel: #fff;
+  --color-on-header: #fff;
+  --color-on-card: #fff;
+
+  /* Interactive States - Surface (Dark) */
+  --color-surface-hover: #374151ff;
+  --color-surface-active: #4b5563ff;
+  --color-panel-hover: #4b5563ff;
+  --color-panel-active: #6b7280ff;
+  --color-header-hover: #6b7280ff;
+  --color-header-active: #9ca3afff;
+  --color-card-hover: #374151ff;
+  --color-card-active: #4b5563ff;
+}
+
+/* Layer 2: Structural Colors (for CSS classes) for REVIEW */
+.dark {
+  /* Border Hierarchy - Dark Mode */
+  --color-border: #4b5563;
+  --color-border-light: #6b7280;
+  --color-border-emphasis: #3b82f6;
+
+  /* Text Hierarchy - Dark Mode */
+  /*
+  --color-text-primary: #f9fafb;
+  --color-text-secondary: #d1d5db;
+  --color-text-tertiary: #9ca3af;
+  --color-text-muted: #6b7280;
+  */
+}

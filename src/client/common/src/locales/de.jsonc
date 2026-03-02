@@ -1,0 +1,21 @@
+{
+    "Menu": "Speisekarte",
+
+    // Buttons
+    "Close": "Schließen",
+
+    //
+    // Compontents
+    //
+
+    // Table footer
+    "Show": "Anzeigen",
+    "per page": "pro Seite",
+
+    // Language names (in German)
+    "language.en": "Englisch",
+    "language.el": "Griechisch",
+    "language.es": "Spanisch",
+    "language.fr": "Französisch",
+    "language.de": "Deutsch"
+}

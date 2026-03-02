@@ -1,0 +1,123 @@
+/* Layer 2: Reusable Utility Patterns */
+
+/* ==========================================================================
+   Background Utilities
+   ========================================================================== */
+
+.bg-surface { background-color: var(--color-surface); }
+.bg-panel { background-color: var(--color-panel); }
+.bg-header { background-color: var(--color-header); }
+.bg-card { background-color: var(--color-card); }
+
+/* ==========================================================================
+   Text Color Utilities
+   ========================================================================== */
+
+.text-surface { color: var(--color-on-surface); }
+.text-panel { color: var(--color-on-panel); }
+.text-header { color: var(--color-on-header); }
+.text-card { color: var(--color-on-card); }
+/* .text-muted { color: var(--color-text-muted); }
+.text-secondary { color: var(--color-text-secondary); }
+.text-tertiary { color: var(--color-text-tertiary); } */
+
+/* ==========================================================================
+   Border Utilities
+   ========================================================================== */
+
+.border-standard { border-color: var(--color-border); }
+.border-light { border-color: var(--color-border-light); }
+.border-emphasis { border-color: var(--color-border-emphasis); }
+
+/* ==========================================================================
+   Interactive State Utilities
+   ========================================================================== */
+
+.hover-panel:hover { background-color: var(--color-panel-hover); }
+.hover-card:hover { background-color: var(--color-card-hover); }
+.hover-header:hover { background-color: var(--color-header-hover); }
+.hover-surface:hover { background-color: var(--color-surface-hover); }
+
+.active-panel:active { background-color: var(--color-panel-active); }
+.active-card:active { background-color: var(--color-card-active); }
+.active-header:active { background-color: var(--color-header-active); }
+.active-surface:active { background-color: var(--color-surface-active); }
+
+/* ==========================================================================
+   Surface Pattern Classes (Legacy - for backward compatibility)
+   ========================================================================== */
+
+.panel {
+  background-color: var(--color-panel);
+  color: var(--color-on-panel);
+}
+
+.header {
+  background-color: var(--color-header);
+  color: var(--color-on-header);
+}
+
+.card {
+  background-color: var(--color-card);
+  color: var(--color-on-card);
+}
+
+/* ==========================================================================
+   Common Pattern Utilities
+   ========================================================================== */
+
+.surface-elevated {
+  background-color: var(--color-card);
+  border: 1px solid var(--color-border);
+  border-radius: 6px;
+}
+
+.surface-flat {
+  background-color: var(--color-panel);
+  border: 1px solid var(--color-border-light);
+}
+
+.surface-inset {
+  background-color: var(--color-header);
+  border: 1px solid var(--color-border);
+  border-radius: 4px;
+}
+
+.text-label {
+  color: var(--color-text-secondary);
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.text-caption {
+  color: var(--color-text-muted);
+  font-size: 0.75rem;
+}
+
+/* .text-body {
+  color: var(--color-ambient);
+} */
+
+/* ==========================================================================
+   Focus and Selection Utilities
+   ========================================================================== */
+
+.focus-emphasis:focus {
+  border-color: var(--color-border-emphasis);
+  outline: none;
+}
+
+.focus-ring:focus {
+  outline: 2px solid var(--color-border-emphasis);
+  outline-offset: 2px;
+}
+
+.selected {
+  background-color: var(--color-selected);
+  color: var(--color-on-selected);
+}
+
+.drag {
+  background-color: var(--color-drag);
+  color: var(--color-on-drag);
+}

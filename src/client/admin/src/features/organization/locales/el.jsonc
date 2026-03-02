@@ -1,0 +1,10 @@
+{
+    // Organizations list page header
+    "Manage organizations and their hierarchy": "Διαχείριση οργανισμών και της ιεραρχίας τους",
+
+    // Organizations table header
+    "Organization Name": "Όνομα Οργανισμού",
+    "Code": "Κωδικός",
+    "Status": "Κατάσταση",
+    "Parent Organization": "Γονική Οργανωση"
+}

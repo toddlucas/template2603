@@ -1,0 +1,31 @@
+{
+    // Fallbacks to translation namespace.
+    // "Organizations": "Organizations",
+
+    // Organizations list page header
+    "Manage organizations and their hierarchy": "Manage organizations and their hierarchy",
+
+    // Organizations table header
+    "Organization Name": "Organization Name",
+    "Code": "Code",
+    "Status": "Status",
+    "Parent Organization": "Parent Organization",
+    // "Description": "Description",
+    // "Actions": "Actions",
+
+    // Organizations detail view.
+    "Organization Information": "Organization Information",
+    "Organization Details": "Organization Details",
+    "Basic details about this organization": "Basic details about this organization",
+    "Organization ID": "Organization ID",
+    // "Status": "Status",
+    // "Code": "Code",
+    //"Parent Organization": "Parent Organization",
+    //"Description": "Description",
+
+    "Quick Actions": "Quick Actions",
+    "Common actions for this organization": "Common actions for this organization",
+    "View Members": "View Members",
+    "View Children": "View Children",
+    "Add Child Organization": "Add Child Organization"
+}

@@ -1,0 +1,17 @@
+{
+    // Fallbacks to translation namespace.
+    // "Users": "Users",
+
+    // Users list page header
+    "Manage user accounts and permissions": "Manage user accounts and permissions",
+    "Search by user name": "Search by user name",
+    "Error loading users": "Error loading users",
+    "No users found": "No users found",
+    "Get started by creating a new user account.": "Get started by creating a new user account.",
+
+    // Users table header
+    "ID": "ID",
+    "Email": "Email",
+    // "Actions": "Actions",
+    "User Name": "User Name"
+}

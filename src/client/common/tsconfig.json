@@ -1,0 +1,29 @@
+{
+  "extends": "./tsconfig.base.json",
+  "compilerOptions": {
+    "experimentalDecorators": true,
+
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./src/*"],
+      "$/*": ["./src/*"],
+      "#mail/*": ["../common/src/apps/mail/*"],
+      "#onboarding/*": ["../common/src/apps/onboarding/*"]
+    },
+
+    "outDir": "./dist",
+    "rootDir": "./src"
+  },
+  "include": [
+    "src/**/*"
+  ],
+  "exclude": [
+    "node_modules",
+    "dist",
+    "scratch",
+    "examples",
+    ".notes",
+    "**/*.example.tsx",
+    "**/*.example.ts"
+  ]
+} 
