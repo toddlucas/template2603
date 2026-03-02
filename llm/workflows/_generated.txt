@@ -1,0 +1,66 @@
+# Workflow Generation Log
+# 
+# This file tracks when workflows were last generated from templates.
+# Regenerate when referenced modules change or workflows need updates.
+
+Generated: 2025-12-17T00:00:00Z
+
+Files:
+  server-feature.md        2025-12-17
+  server-entity.md         2025-12-17
+  server-modification.md   2025-12-17
+  client-feature.md        2025-12-10
+  client-entity.md         2025-12-10
+  client-modification.md   2025-12-10
+  fullstack-feature.md     2025-12-10
+  fullstack-entity.md      2025-12-10
+  fullstack-modification.md 2025-12-10
+
+Source Templates:
+  ../templates/server-feature.md
+  ../templates/server-entity.md
+  ../templates/server-modification.md
+  ../templates/client-feature.md
+  ../templates/client-entity.md
+  ../templates/client-modification.md
+  ../templates/fullstack-feature.md
+  ../templates/fullstack-entity.md
+  ../templates/fullstack-modification.md
+
+Source Modules:
+  ../modules/patterns/server/model-troika.md
+  ../modules/patterns/server/queries.md
+  ../modules/patterns/server/mappers.md
+  ../modules/patterns/server/services.md
+  ../modules/patterns/server/localization.md
+  ../modules/patterns/server/metrics.md
+  ../modules/patterns/server/controllers.md
+  ../modules/patterns/server/rls.md
+  ../modules/patterns/server/testing.md
+  ../modules/patterns/client/feature-structure.md
+  ../modules/patterns/client/localization.md
+  ../modules/patterns/client/components.md
+  ../modules/patterns/client/routing.md
+  ../modules/patterns/client/testing.md
+  ../modules/howto/update-tracking-docs.md
+
+Changes in this generation:
+  - Added new localization module (../modules/patterns/server/localization.md)
+  - Regenerated all three server workflows with localization support
+  
+  server-feature.md:
+    - Localization as Step 5 (after services, before metrics)
+    - Complete guidance: when to localize, IStringLocalizer injection, marker classes
+    - Resource file expectations and supported languages
+    - Checklist updated with localization verification items
+  
+  server-entity.md:
+    - Localization as Step 5 (renumbered subsequent steps to 6-10)
+    - Tailored for entities in existing namespaces (marker class should exist)
+    - Checklist updated with localization verification items
+  
+  server-modification.md:
+    - New section: "Adding Localized Messages"
+    - Guidance for adding localized messages when modifying operations
+    - Pattern for using existing IStringLocalizer in services
+    - Checklist updated to include localization for new operations
