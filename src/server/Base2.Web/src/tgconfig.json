@@ -1,0 +1,13 @@
+{
+  "csNullableTranslation": "optional",
+  "customTypeMappings": {
+    "System.DateTime": "string | Date",
+    "System.DateOnly": "string | Date",
+    "System.TimeOnly": "string | Date"
+  },
+  "useImportType": true,
+  "enumStringInitializers": true,
+  "enumStringInitializersConverters": [ "PascalCaseToCamelCase" ],
+  "enumValueNameConverters": [ "PascalCaseToCamelCase" ],
+  "generationSpecs": [ "AppGenerationSpec" ]
+}

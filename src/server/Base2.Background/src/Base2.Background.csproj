@@ -1,0 +1,44 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>Base2</RootNamespace>
+    <UserSecretsId>e9fa50af-099c-4a5a-a6a6-0f68e6acf45b</UserSecretsId>
+    <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+    <!--<DockerfileContext>..\..</DockerfileContext>-->
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Hangfire.AspNetCore" />
+    <PackageReference Include="Hangfire.Core" />
+    <PackageReference Include="Hangfire.Storage.SQLite" />
+    <PackageReference Include="Microsoft.AspNetCore.DataProtection" />
+    <PackageReference Include="Microsoft.Extensions.Hosting" />
+    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" />
+    <PackageReference Include="Seq.Extensions.Logging" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Base2.Background.Tasks\src\Base2.Background.Tasks.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="appsettings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="appsettings.*.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <DependentUpon>appsettings.json</DependentUpon>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <AppSettingsFiles Include="..\..\Base2.Web\src\appsettings*.json" />
+  </ItemGroup>
+
+  <Target Name="CopyAppSettingsFiles" BeforeTargets="PreBuildEvent">
+    <Exec Command="echo Copying appsettings files for $(MSBuildProjectName)" />
+    <Copy SourceFiles="@(AppSettingsFiles)" DestinationFolder="$(ProjectDir)" />
+  </Target>
+
+</Project>

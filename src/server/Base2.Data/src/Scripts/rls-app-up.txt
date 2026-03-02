@@ -1,0 +1,4 @@
+            if (ActiveProvider != "Npgsql.EntityFrameworkCore.PostgreSQL")
+                return;
+
+            AppPolicyManager.Instance.EnableRls(migrationBuilder);

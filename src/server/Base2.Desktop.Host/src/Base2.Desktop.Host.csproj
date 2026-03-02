@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <RootNamespace>Base2.Desktop</RootNamespace>
+    <AssemblyName>ProductName.Desktop.Host</AssemblyName>
+    <UserSecretsId>product-name-desktop-host</UserSecretsId>
+    <!-- Single-file publish for bundling with the Electron installer. -->
+    <PublishSingleFile>true</PublishSingleFile>
+    <SelfContained>true</SelfContained>
+    <RuntimeIdentifier>win-x64</RuntimeIdentifier>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.OpenApi" />
+    <PackageReference Include="Scalar.AspNetCore" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Base2.Common\src\Base2.Common.csproj" />
+    <ProjectReference Include="..\..\Base2.Contracts\src\Base2.Contracts.csproj" />
+    <ProjectReference Include="..\..\Base2.Data\src\Base2.Data.csproj" />
+    <ProjectReference Include="..\..\Base2.Data.Sqlite\src\Base2.Data.Sqlite.csproj" />
+    <ProjectReference Include="..\..\Base2.Services\src\Base2.Services.csproj" />
+  </ItemGroup>
+
+</Project>
