@@ -1,0 +1,46 @@
+#!/bin/zsh
+
+# Get the directory where this script is located
+SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
+
+# Calculate _PROJ by going up one level from bin directory
+_PROJ="$(dirname "$SCRIPT_DIR")"
+
+# Calculate _ROOT by going up one more level from _PROJ
+_ROOT="$(dirname "$_PROJ")"
+
+# Define tabs as "dir:title" pairs using dynamic variables
+tabs=(
+  "$_ROOT:root"
+  "$_PROJ:main"
+  "$_PROJ/src/client:client"
+  "$_PROJ/src/client/app:app"
+  "$_PROJ/src/client/web:web"
+  "$_PROJ/src/client/web:test"
+  "$_PROJ/src/server:server"
+  "$_PROJ/src/server/Base2.Data/src:data"
+  "$_PROJ/src/server/Base2.Web/src:api"
+)
+
+# Generate AppleScript
+applescript="tell application \"iTerm\"
+  activate
+  tell current window"
+
+for tab in "${tabs[@]}"; do
+  dir="${tab%%:*}"
+  title="${tab##*:}"
+  applescript+="
+    create tab with default profile
+    tell current session
+      write text \"cd ${dir}; echo -ne \\\"\\\\\\\\033]1;${title}\\\\\\\\007\\\"\"
+    end tell"
+done
+
+applescript+="
+  end tell
+end tell"
+
+osascript <<EOF
+$applescript
+EOF

@@ -1,0 +1,58 @@
+# Ignore build outputs (but keep the root /bin)
+?*/**/bin/
+obj/
+.vs/
+.vite/
+dist/
+release/
+
+# Ignore migrations during development.
+Migrations/
+
+**/node_modules/*
+**/TestResults/*
+**/App_Data/captures/*
+
+doc/archive/
+doc/references/
+doc/HISTORY.md
+doc/TODO.md
+
+*.user
+
+*.db
+*.db-shm
+*.db-wal
+*.db.bak
+
+*.lutconfig
+
+*.tsbuildinfo
+
+env-*.cmd
+dev-*.cmd
+
+.env
+.env.local
+.env.*.local
+.env.development
+.env.development.local
+.env.test.local
+.env.production.local
+
+appsettings.*.local.json
+
+# SpecStory explanation file
+.specstory/.what-is-this.md
+.specstory/.gitignore
+.specstory/history/
+
+# Development artifacts (temporary files)
+**/scratch/
+**/.scratch/
+
+# OS files
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
